@@ -180,7 +180,7 @@ body {
     width: 475px;
     height: 139px;
     gap: 16px;
-    background-color: #f80000;
+    background-color: #f8000000;
     border-radius: 10px;
 
 }
@@ -224,7 +224,7 @@ body {
     /* width: 828px;
     height: 958px; */
     
-    gap: auto;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     padding: 40px 30px;
