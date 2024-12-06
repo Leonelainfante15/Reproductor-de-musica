@@ -72,12 +72,12 @@
         <div class="contenido__reproductor">
 
             <div class="contenido__reproductor__cancionActual">
-                <img class="contenido__reproductor__cancionActual__portada" src="assets/midnigthMemories.png" alt="">
+                <img class="contenido__reproductor__cancionActual__portada" id="image" src="assets/midnigthMemories.png" alt="">
 
                 <div class="contenido__reproductor__cancionActual__cancionArtista">
-                    <h2 class="contenido__reproductor__cancionActual__cancionArtista__nombreCancion">Midnight Memories
+                    <h2 class="contenido__reproductor__cancionActual__cancionArtista__nombreCancion" id="title">Midnight Memories
                     </h2>
-                    <h3 class="contenido__reproductor__cancionActual__cancionArtista__nombreArtista">One Direction</h3>
+                    <h3 class="contenido__reproductor__cancionActual__cancionArtista__nombreArtista" id="author">One Direction</h3>
                 </div>
 
             </div>
@@ -91,14 +91,17 @@
                     src="/assets/boton izquierda.png" alt="">
 
                 <div class="contenido__reproductor__botonesReproductor__fondoBotonReproducir">
-                    <img class="contenido__reproductor__botonesReproductor__fondoBotonReproducir__botonReproducir"
-                        src="/assets/div figura del boton.png" alt="">
+                    <img id="play" class="contenido__reproductor__botonesReproductor__fondoBotonReproducir__botonReproducir"
+                        src="/assets/botonPausa.png" alt="">
                 </div>
 
                 <img class="contenido__reproductor__botonesReproductor__botonDerecha" src="/assets/boton derecha.png"
                     alt="">
                 <img class="contenido__reproductor__botonesReproductor__botonAleatorio"
                     src="/assets/boton aleatorio.png" alt="">
+
+                <audio src="" controls id='audio' autoplay></audio>
+
             </div>
 
         </div>

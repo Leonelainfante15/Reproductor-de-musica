@@ -15,8 +15,30 @@ const createSongHTMLElement = (song) => {
     </div>
     `
 
+    setInteractiveComponent(div, song)
+
     return div
 }
+
+
+
+
+
+const setInteractiveComponent = (component, song) => {
+
+    component.addEventListener('click', () => {
+    
+    document.getElementById('audio').setAttribute('src', song.audio.url )
+    document.getElementById('image').setAttribute('src', song.image.url )
+    document.getElementById('title').innerHTML = song.title
+    document.getElementById('author').innerHTML = song.author
+
+    })
+}
+
+
+
+
 
 axios.get('https://api.institutoalfa.org/api/songs')
     .then( (response) => {
@@ -32,4 +54,16 @@ axios.get('https://api.institutoalfa.org/api/songs')
         
         } )
 
+    })
+
+    document.getElementById('play').addEventListener('click', () => {
+        const audio = document.getElementById('audio')
+    
+        if (audio.paused) {
+            document.getElementById('play').setAttribute('src', '/assets/botonPausa.png')
+            audio.play()
+        } else {
+            audio.pause()
+            document.getElementById('play').setAttribute('src', '/assets/botonPlay.svg')
+        }
     })
