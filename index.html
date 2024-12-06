@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reproductor de musica</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <link rel="stylesheet" href="style.css" />
 
@@ -56,184 +59,7 @@
             <!-- Este es el contenedor de las canciones -->
              <!-- El ID lo debes agregar aquí adentro -->
               <!-- el contenedor va quedar vacío, debes borrar su contenido -->
-            <div class="contenido__seccionCanciones__listaCanciones">
-
-                <!-- tarjeta used to this -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/UsedToThis.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Used To This</h2>
-                        <h3
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Camila Cabello</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta save your tears -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/saveYourTears.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Save Your Tears</h2>
-                        <h3
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            The Weeknd</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta One Last Time -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/OneLastTime.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            One Last Time</h2>
-                        <h3
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Ariana Grande</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta Work From Home -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/workFromHome.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Work From Home</h2>
-                        <h3
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Fifth Harmony</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta Juno -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/juno.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Juno</h2>
-                        <h3 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Sabrina Carpenter</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta One Last Time -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/OneLastTime.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            One Last Time</h2>
-                        <h3
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Ariana Grande</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta Work From Home -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/workFromHome.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            All In My Head</h2>
-                        <h3
-                            class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Fifth Harmony</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta Juno -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/juno.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Taste</h2>
-                        <h3 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Sabrina Carpenter</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta Juno -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjetaJ__portada"
-                        src="/assets/juno.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Juno</h2>
-                        <h3 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Sabrina Carpenter</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta Juno -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/juno.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Juno</h2>
-                        <h3 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista">
-                            Sabrina Carpenter</h3>
-                    </div>
-
-                </div>
-
-                <!-- tarjeta Juno -->
-
-                <div class="contenido__seccionCanciones__listaCanciones__tarjeta">
-                    <img class="contenido__seccionCanciones__listaCanciones__tarjeta__portada"
-                        src="/assets/juno.jpg" alt="">
-
-                    <div class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion">
-                        <h2 class="contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion">
-                            Juno</h2>
-                        <h3 class="contenido__seccionCanciones__listaCanciones__tarjeta_descripcion__nombreArtista">
-                            Sabrina Carpenter</h3>
-                    </div>
-
-                </div>
+            <div class="contenido__seccionCanciones__listaCanciones" id="container-song">
 
             </div>
 
@@ -278,6 +104,8 @@
         </div>
 
     </section>
+
+    <script src="/script.js"></script>
 
 </body>
 
