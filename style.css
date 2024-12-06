@@ -182,6 +182,7 @@ body {
     gap: 16px;
     background-color: #f8000000;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
@@ -307,5 +308,6 @@ body {
 .contenido__reproductor__botonesReproductor img {
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 
