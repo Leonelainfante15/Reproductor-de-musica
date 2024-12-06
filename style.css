@@ -12,10 +12,17 @@
     box-sizing: border-box;
 
 }
+body {
+    height: 100vh;
+    background-color: #151212;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
 
 .navbar { /*este es el div del header*/
     padding: 16px 60px;
-    background-color: #151212;
 
 }
 
@@ -35,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 511px;
+    /* width: 511px; */
     height: 60px;
     gap: 166px;
     padding: 14px 54px;
@@ -66,37 +73,42 @@
     font-weight: bold;
 }
 
-.contenido{
+.contenido {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1490px;
-    height: 1034px;
-    gap: auto;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+
+    /* Sin width ni height definidos. al tenerlos en pixeles es como si tuvieras un fixed en figma */
+    /* width: 1490px;
+    height: 1034px; */
+    gap: 32px;
+    flex-grow: 1;
     padding: 38px 32px;
     background-color: #151212;
+    overflow: hidden;
     
 }
 
 .contenido__seccionCanciones{
     display: flex;
     flex-direction: column;
-    width: 555px;
-    height: 958px;
+    /* width: 555px;
+    height: 958px; */
     background-color: #221D1D;
     padding: 0px 20px;
     gap: 10px;
     border-radius: 20px;
+    flex-grow: 1;
 }
 
 .contenido__seccionCanciones__navbar{
     display: flex;
     align-items: end;
-    justify-content: center;
-    width: 515px;
-    height: 100px;
+    justify-content: flex-start;
+    /* width: 515px;
+    height: 100px; */
     gap: 10px;
-    padding: 5px 10px;
+    padding: 25px;
     background-color: #221D1D;
 
 }
@@ -152,33 +164,35 @@
     flex-direction: column;
    /* align-items: start;
     justify-content: center;*/
-    width: 515px;
-    height: 760px;
+    /* width: 515px;
+    height: 760px; */
+    flex-grow: 1;
+    overflow-y: auto;
     gap: 10px;
     padding: 15px 20px;
     background-color: #221D1D;
 }
 
-.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis{
+.contenido__seccionCanciones__listaCanciones__tarjeta{
     display: flex;
     align-items: center;
     justify-content: start;
     width: 475px;
     height: 139px;
     gap: 16px;
-    background-color: #221D1D;
+    background-color: #f80000;
     border-radius: 10px;
 
 }
 
-.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__portada{
+.contenido__seccionCanciones__listaCanciones__tarjeta__portada{
     width: 116px;
     height: 107px;
     border-radius: 10px;
     background-color: #221D1D;
 
 }
-.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__descripcion{
+.contenido__seccionCanciones__listaCanciones__tarjeta__descripcion{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,13 +202,13 @@
     gap: 18px;
     padding: 0px 5px;
 }
-.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__descripcion__nombreCancion{
+.contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreCancion{
     background-color: #221D1D;
     color: #ffff;
     font-size: 20px;
     font-weight: bold;
 }
-.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__descripcion__nombreArtista{
+.contenido__seccionCanciones__listaCanciones__tarjeta__descripcion__nombreArtista{
     background-color: #221D1D;
     color: #ffff;
     font-size: 18px;
@@ -202,190 +216,15 @@
 
 
 /*-------------------------------------------------------------------------------------------------------------*/
-
-
-.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 475px;
-    height: 139px;
-    gap: 16px;
-    background-color: #221D1D;
-    border-radius: 10px;
-
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__portada{
-    width: 116px;
-    height: 107px;
-    border-radius: 10px;
-}
-.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__descripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 323px;
-    height: 70px;
-    background-color: #221D1D;
-    gap: 18px;
-    padding: 0px 5px;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__descripcion__nombreCancion{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__descripcion__nombreArtista{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 18px;
-}
-
-/*-------------------------------------------------------------------------------------------------------------*/
-
-
-.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 475px;
-    height: 139px;
-    gap: 16px;
-    background-color: #221D1D;
-    border-radius: 10px;
-
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__portada{
-    width: 116px;
-    height: 107px;
-    border-radius: 10px;
-}
-.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__descripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 323px;
-    height: 70px;
-    background-color: #221D1D;
-    gap: 18px;
-    padding: 0px 5px;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__descripcion__nombreCancion{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__descripcion__nombreArtista{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 18px;
-}
-
-
-/*-------------------------------------------------------------------------------------------------------------*/
-
-
-.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 475px;
-    height: 139px;
-    gap: 16px;
-    background-color: #221D1D;
-    border-radius: 10px;
-
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__portada{
-    width: 116px;
-    height: 107px;
-    border-radius: 10px;
-}
-.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__descripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 323px;
-    height: 70px;
-    background-color: #221D1D;
-    gap: 18px;
-    padding: 0px 5px;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__descripcion__nombreCancion{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__descripcion__nombreArtista{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 18px;
-}
-
-/*-------------------------------------------------------------------------------------------------------------*/
-
-
-.contenido__seccionCanciones__listaCanciones__tarjetaJuno{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 475px;
-    height: 139px;
-    gap: 16px;
-    background-color: #221D1D;
-    border-radius: 10px;
-
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaJuno__portada{
-    width: 116px;
-    height: 107px;
-    border-radius: 10px;
-}
-.contenido__seccionCanciones__listaCanciones__tarjetaJuno__descripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 323px;
-    height: 70px;
-    background-color: #221D1D;
-    gap: 18px;
-    padding: 0px 5px;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaJuno__descripcion__nombreCancion{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.contenido__seccionCanciones__listaCanciones__tarjetaJuno__descripcion__nombreArtista{
-    background-color: #221D1D;
-    color: #ffff;
-    font-size: 18px;
-}
-
 
 
 .contenido__reproductor{
     display: flex;
     flex-direction: column;
-    width: 828px;
-    height: 958px;
-    gap: 21px;
+    /* width: 828px;
+    height: 958px; */
+    
+    gap: auto;
     align-items: center;
     justify-content: center;
     padding: 40px 30px;
@@ -396,20 +235,20 @@
 
 .contenido__reproductor__cancionActual{
     display: flex;
-    width: 768px;
-    height: 670px;
+    /* width: 768px;
+    height: 670px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 45px;
+    gap: 24px;
     padding: 0px 100px;
-    background-color: #221D1D;
+    background-color: #221d1d00;
 
 }
 
 .contenido__reproductor__cancionActual__portada{
-    width: 527px;
-    height: 527px;
+    width: 327px;
+    height: 327px;
     gap: 10px;
     padding: 10px 10px;
     border-radius: 300px;
@@ -419,30 +258,32 @@
 .contenido__reproductor__cancionActual__cancionArtista{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: auto;
     width: 568px;
     height: 98px;
     align-items: center;
-    background-color: #221D1D;
+    
 
 }
 
 .contenido__reproductor__cancionActual__cancionArtista__nombreCancion{
-    font-size: 36px;
-    font-weight: bold;
-    color: #ffff;
-    background-color: #221D1D;
-}
-
-.contenido__reproductor__cancionActual__cancionArtista__nombreArtista{
     font-size: 32px;
     font-weight: bold;
     color: #ffff;
     background-color: #221D1D;
 }
 
+.contenido__reproductor__cancionActual__cancionArtista__nombreArtista{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #221D1D;
+}
+
 .contenido__reproductor__barraDeReproduccion{
-    width: 768px;
+    /* width: 768px; */
+    width: 100%;
+    object-fit: contain;
     height: 3px;
     gap: 10px;
     background-color: #221D1D;
@@ -451,13 +292,20 @@
 .contenido__reproductor__botonesReproductor{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 768px;
-    height: 138px;
-    gap: auto;
-    padding: 32px 54px;
+    justify-content: center;
+
+    /* width: 768px;
+    height: 138px; */
+    width: 100%;
+    gap: 64px;
+    /* padding: 32px 54px; */
     background-color: #221D1D;
     border-radius: 20px;
+}
+
+.contenido__reproductor__botonesReproductor img {
+    width: 32px;
+    height: 32px;
 }
 
 .contenido__reproductor__botonesReproductor__botonRepetir{
