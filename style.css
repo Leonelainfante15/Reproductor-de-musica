@@ -1,0 +1,480 @@
+/* NO USAR MARGIN */
+
+* { /* este es para limpiar la pagina para empezar con un lienzo limpio (seteado)*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: unset;
+    margin: unset;
+    border: unset;
+
+    box-sizing: border-box;
+
+}
+
+.navbar { /*este es el div del header*/
+    padding: 16px 60px;
+    background-color: #151212;
+
+}
+
+.navbar__nav { /* esta es la barra de navegacion*/
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: auto;
+    background-color: #151212;
+}
+
+.navbar__nav__logo{
+    background-color:#221D1D;
+}
+
+.navbar__nav__barraDeBusqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 511px;
+    height: 60px;
+    gap: 166px;
+    padding: 14px 54px;
+    border-radius: 100px;
+    background-color: #221D1D;
+}
+
+.navbar__nav__barraDeBusqueda__textoBuscar{
+    background-color: #221D1D;
+    color: #ffff;
+    
+}
+
+.navbar__nav__barraDeBusqueda__imgLupa{
+    background-color: #221D1D;
+}
+
+.navbar__nav__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #221D1D;
+    width: 245px;
+    height: 57px;
+    border-radius: 100px;
+    padding: 20px 0px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1490px;
+    height: 1034px;
+    gap: auto;
+    padding: 38px 32px;
+    background-color: #151212;
+    
+}
+
+.contenido__seccionCanciones{
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    height: 958px;
+    background-color: #221D1D;
+    padding: 0px 20px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.contenido__seccionCanciones__navbar{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 515px;
+    height: 100px;
+    gap: 10px;
+    padding: 5px 10px;
+    background-color: #221D1D;
+
+}
+
+.contenido__seccionCanciones__navbar__botonBiblioteca{
+    display: flex;
+    width: 180px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 30px;
+    background-color: #151212;
+    border-radius: 100px;
+}
+
+.contenido__seccionCanciones__navbar__botonBiblioteca__texto{
+    background-color: #151212;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.contenido__seccionCanciones__navbar__botonBiblioteca__img{
+    background-color: #151212;
+    color: #ffff;
+
+}
+
+.contenido__seccionCanciones__navbar__buscador{
+    display: flex;
+    width: 305px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: #151212;
+    border-radius: 100px;
+}
+
+.contenido__seccionCanciones__navbar__buscador__texto{
+    background-color: #151212;
+    color: #ffff;
+}
+
+.contenido__seccionCanciones__navbar__buscador__img{
+    background-color: #151212;
+    color: #ffff;
+}
+
+.contenido__seccionCanciones__listaCanciones{
+    display: flex;
+    flex-direction: column;
+   /* align-items: start;
+    justify-content: center;*/
+    width: 515px;
+    height: 760px;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: #221D1D;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 475px;
+    height: 139px;
+    gap: 16px;
+    background-color: #221D1D;
+    border-radius: 10px;
+
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__portada{
+    width: 116px;
+    height: 107px;
+    border-radius: 10px;
+    background-color: #221D1D;
+
+}
+.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 323px;
+    height: 70px;
+    background-color: #221D1D;
+    gap: 18px;
+    padding: 0px 5px;
+}
+.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__descripcion__nombreCancion{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contenido__seccionCanciones__listaCanciones__tarjetaUsedToThis__descripcion__nombreArtista{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 18px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 475px;
+    height: 139px;
+    gap: 16px;
+    background-color: #221D1D;
+    border-radius: 10px;
+
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__portada{
+    width: 116px;
+    height: 107px;
+    border-radius: 10px;
+}
+.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 323px;
+    height: 70px;
+    background-color: #221D1D;
+    gap: 18px;
+    padding: 0px 5px;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__descripcion__nombreCancion{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaSaveYourTears__descripcion__nombreArtista{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 18px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 475px;
+    height: 139px;
+    gap: 16px;
+    background-color: #221D1D;
+    border-radius: 10px;
+
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__portada{
+    width: 116px;
+    height: 107px;
+    border-radius: 10px;
+}
+.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 323px;
+    height: 70px;
+    background-color: #221D1D;
+    gap: 18px;
+    padding: 0px 5px;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__descripcion__nombreCancion{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaOneLastTime__descripcion__nombreArtista{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 18px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 475px;
+    height: 139px;
+    gap: 16px;
+    background-color: #221D1D;
+    border-radius: 10px;
+
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__portada{
+    width: 116px;
+    height: 107px;
+    border-radius: 10px;
+}
+.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 323px;
+    height: 70px;
+    background-color: #221D1D;
+    gap: 18px;
+    padding: 0px 5px;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__descripcion__nombreCancion{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaWorkFromHome__descripcion__nombreArtista{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 18px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+.contenido__seccionCanciones__listaCanciones__tarjetaJuno{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 475px;
+    height: 139px;
+    gap: 16px;
+    background-color: #221D1D;
+    border-radius: 10px;
+
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaJuno__portada{
+    width: 116px;
+    height: 107px;
+    border-radius: 10px;
+}
+.contenido__seccionCanciones__listaCanciones__tarjetaJuno__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 323px;
+    height: 70px;
+    background-color: #221D1D;
+    gap: 18px;
+    padding: 0px 5px;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaJuno__descripcion__nombreCancion{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenido__seccionCanciones__listaCanciones__tarjetaJuno__descripcion__nombreArtista{
+    background-color: #221D1D;
+    color: #ffff;
+    font-size: 18px;
+}
+
+
+
+.contenido__reproductor{
+    display: flex;
+    flex-direction: column;
+    width: 828px;
+    height: 958px;
+    gap: 21px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    border-radius: 20px;
+    background-color: #221D1D;
+
+}
+
+.contenido__reproductor__cancionActual{
+    display: flex;
+    width: 768px;
+    height: 670px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 0px 100px;
+    background-color: #221D1D;
+
+}
+
+.contenido__reproductor__cancionActual__portada{
+    width: 527px;
+    height: 527px;
+    gap: 10px;
+    padding: 10px 10px;
+    border-radius: 300px;
+    background-color: #151212;
+}
+
+.contenido__reproductor__cancionActual__cancionArtista{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 568px;
+    height: 98px;
+    align-items: center;
+    background-color: #221D1D;
+
+}
+
+.contenido__reproductor__cancionActual__cancionArtista__nombreCancion{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #221D1D;
+}
+
+.contenido__reproductor__cancionActual__cancionArtista__nombreArtista{
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #221D1D;
+}
+
+.contenido__reproductor__barraDeReproduccion{
+    width: 768px;
+    height: 3px;
+    gap: 10px;
+    background-color: #221D1D;
+}
+
+.contenido__reproductor__botonesReproductor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 768px;
+    height: 138px;
+    gap: auto;
+    padding: 32px 54px;
+    background-color: #221D1D;
+    border-radius: 20px;
+}
+
+.contenido__reproductor__botonesReproductor__botonRepetir{
+    background-color: #221D1D;
+}
+.contenido__reproductor__botonesReproductor__botonIzquierda{
+    background-color: #221D1D;
+}
+.contenido__reproductor__botonesReproductor__fondoBotonReproducir{
+    background-color: #221D1D;
+}
+.contenido__reproductor__botonesReproductor__fondoBotonReproducir__botonReproducir{
+    background-color: #221D1D;
+}
+.contenido__reproductor__botonesReproductor__botonDerecha{
+    background-color: #221D1D;
+}
+.contenido__reproductor__botonesReproductor__botonAleatorio{
+    background-color: #221D1D;
+}
